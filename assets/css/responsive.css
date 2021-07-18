@@ -290,6 +290,10 @@
 }
 
 @media (max-width: 767px) {
+  .single-banner-wrapper .hero-content-area .p-text1 {
+    font-size: 16px;
+    width: 60%;
+  }
   .job-banner-wrapper h1 {
     font-size: 42px;
   }
@@ -432,6 +436,13 @@
 }
 
 @media (max-width: 575px) {
+  .single-banner-wrapper .hero-content-area .p-text1 {
+    margin: 20px auto;
+  }
+  .single-banner-wrapper .hero-content-area h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
   .login-wrapper-area label {
     position: relative;
     top: -58px;
@@ -686,6 +697,25 @@
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
+  .memoriy_image_gallery .memory_galery_content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .memoriy_image_gallery .memory_galery_content .image_description {
+    height: 100px;
+    -webkit-box-pack: normal !important;
+        -ms-flex-pack: normal !important;
+            justify-content: normal !important;
+  }
+  .ceo_area_start {
+    display: none;
+  }
+  .mobile_leader-wrapper-area {
+    display: block;
+  }
+  .mobile_leader-wrapper-area .leader-image {
+    margin-bottom: 30px;
+  }
   .exam_wrapper_area .exam_nav {
     width: 90%;
     margin-top: 50px;
@@ -746,11 +776,23 @@
     margin-bottom: 50px;
   }
   .comp_pro_area .com_pro_content .com_pro_des_content {
-    top: 57%;
+    bottom: -17%;
+  }
+  .ldr_overview_area .overview_content .overview_img {
+    margin-bottom: 30px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+  .ceo_area_start {
+    display: none;
+  }
+  .mobile_leader-wrapper-area {
+    display: block;
+  }
+  .mobile_leader-wrapper-area .leader-image {
+    margin-bottom: 30px;
+  }
   .exam_wrapper_area .exam_tab_content .select {
     width: 14em;
   }
@@ -789,9 +831,24 @@
   .comp_pro_area .com_pro_content .com_pro_des_content p {
     font-size: 14px;
   }
+  .comp_pro_area .com_pro_content .com_pro_des_content {
+    bottom: -21%;
+  }
+  .ldr_overview_area .overview_content .overview_img {
+    margin-bottom: 30px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .ceo_area_start {
+    display: none;
+  }
+  .mobile_leader-wrapper-area {
+    display: block;
+  }
+  .mobile_leader-wrapper-area .leader-image {
+    margin-bottom: 30px;
+  }
   #answer {
     width: 100%;
   }
@@ -818,6 +875,13 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  .ceo_area_start .ceo_text_content .ceo_spc_de {
+    top: 100px;
+    left: 22%;
+  }
+  .ceo_area_start .ceo_text_content .ceo_spc_de p {
+    font-size: 14px;
+  }
   .exam_wrapper_area .exam_tab_content .chose_sub {
     width: 70%;
     margin-top: 50px;
@@ -828,14 +892,11 @@
   .exam_wrapper_area .test_question .qu_box .answer_box label.start_quiz_item .exp-number {
     margin-right: 20px;
   }
-  .comp_pro_area .com_pro_content .com_pro_des_content {
-    top: 57%;
-  }
-  .comp_pro_area .com_pro_content .com_pro_des_content .pro_title {
-    font-size: 21px;
-  }
   .comp_pro_area .com_pro_content .com_pro_des_content p {
     font-size: 14px;
+  }
+  .comp_pro_area .com_pro_content .com_pro_des_content {
+    bottom: -18%;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

@@ -13,7 +13,16 @@ $(function() {
         $('.navbar-nav .nav-item.active').removeClass('active');
         $(this).addClass('active');
     });
-        
+	// data-background
+	$("[data-background]").each(function(){
+		$(this).css("background-image", "url("+ $(this).attr("data-background") + ")")
+		});
+    // AOS ANIMATION JS
+        AOS.init({
+          offset: 300,
+          duration: 1000,
+        });
+
     ///////////////////////////////////////////// 
     //! CLIENT*
     $('.client-carousel').owlCarousel({
@@ -77,6 +86,14 @@ $(function() {
         $('.test-popup-link').magnificPopup({
           type: 'image'
           // other options
+        });
+        $('.memories_img_gallery').magnificPopup({
+          delegate: 'a', // child items selector, by clicking on it popup will open
+          type: 'image',
+          // other options
+          gallery: {
+            enabled: true
+          },
         });
         $(".btn-one").click(function() {
   
@@ -147,6 +164,7 @@ $(document).ready(function(){
       }
 
       countdown( "ten-countdown", 20,0 );
+
 
 
 document.getElementById('getval').addEventListener('change', readURL, true);
