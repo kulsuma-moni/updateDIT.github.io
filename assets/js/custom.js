@@ -20,7 +20,7 @@ $(function() {
     // AOS ANIMATION JS
         AOS.init({
           offset: 300,
-          duration: 1000,
+          duration:1500,
         });
 
     ///////////////////////////////////////////// 
