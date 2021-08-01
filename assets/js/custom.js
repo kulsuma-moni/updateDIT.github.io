@@ -135,6 +135,30 @@ $(document).ready(function(){
 	$('#question_part_5').show();
  });
 });
+
+// APLICANT IMAGE UPLOAD JS START
+function previewFile() {
+  var preview = document.querySelector('.im_g');
+  var file    = document.querySelector('#profile-image-upload').files[0];
+  var reader  = new FileReader();
+
+  reader.addEventListener("load", function () {
+    preview.src = reader.result;
+  }, false);
+
+  if (file) {
+    reader.readAsDataURL(file);
+  }
+}
+$(function() {
+    $('#profile-image1').on('click', function() {
+        $('#profile-image-upload').click();
+    });
+});
+
+// APLICANT IMAGE UPLOAD JS END
+
+
       function countdown( elementName, minutes, seconds )
       {
           var element, endTime, hours, mins, msLeft, time;

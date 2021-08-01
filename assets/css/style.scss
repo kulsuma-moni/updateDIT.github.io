@@ -3829,3 +3829,96 @@ Memory area & Be Freelencer CSS
         }
     }
 }
+
+// job Apply Requer Information css
+
+.job_apply_requer_info_area{
+    padding: 110px 0 100px;
+    .info_title{
+        border-bottom: 1px solid rgb(150, 146, 146);
+        h6{
+            font-size: 18px;
+            line-height: 1.5;
+            font-weight: 600;
+            color: $primary-color2;
+            text-align: left;
+        }
+    }
+    .profile-pic{
+        position: relative;
+        transition:.6s;
+        -webkit-transition:.6s;
+        -moz-transition:.6s;
+        -ms-transition:.6s;
+        -o-transition:.6s;
+        .im_g{
+            margin: 40px 0;
+             border-radius: 50%;
+             box-shadow: 0px 0px 5px 0px #c1c1c1;
+             cursor: pointer;
+             width: 100px;
+             height: 100px;
+         }
+         .right_content{
+             position: absolute;
+             bottom: 45%;
+             left: 12%;
+             span{
+                 font-size:16px;
+                 line-height:1.5;
+             }
+         }
+    } 
+    .hidden{
+        display: none !important;
+    }
+    
+    .aplicant_info{
+        form{
+            .form-group{
+                margin-bottom: 20px;
+                label{
+                    text-transform: capitalize;
+                    font-size: 16px;
+                    color: $primary-color2;
+                    font-weight: 600;
+                    line-height: 1.4;
+                    margin-bottom: 8px;
+                }
+                input{
+                    border: 1px solid #ced4da;
+                    font-family: "Poppins", sans-serif;
+                    font-size: 16px;
+                    color: #999;
+                    height: 50px;
+                    &:focus{
+                        border-color: #86b7fe;
+                    }
+                }
+            }
+        }
+    }
+    .submit_btn{
+        margin-top: 50px;
+        .aply_submit {
+            font-size: 16px;
+            font-family: $secondary-font;
+            color:$primary-color3;
+            font-weight: 500;
+            line-height: 28px;
+            padding: 10px 40px;
+            margin-left: 12px;
+            border-radius: 5px;
+            background-size: 300% 100%;
+            text-align: center;
+            display: inline-block;
+            background-size: 200%, 1px;
+            background-image: linear-gradient(90deg, #1ec5fa 0%, #0d47d5 50%, #1ec5fa);
+            text-transform: capitalize;
+            &:hover {
+                background-position: 120%;
+                color:$primary-color3;
+            }
+        }
+    }
+}
